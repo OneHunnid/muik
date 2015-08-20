@@ -1,0 +1,136 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+*, *:before, *:after {
+  box-sizing:border-box;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@primaryFont {"open Sans"}
+
+/* html is set to 62.5% so that all the REM measurements throughout MUIK
+are based on 10px sizing. So basically 1.5rem = 15px Woot! */
+html {
+	font-size: 62.5%; 
+}
+
+body {
+	font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: @primaryFont, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #4c4c4c; 
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.4;
+	font-weight: 400;
+	font-family: @primaryFont, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	.black--type; 
+}
+
+h1 {
+	font-size: 5.0rem;
+}
+
+h2 {
+	font-size: 4.2rem;
+}
+
+h3 {
+	font-size: 3.6rem;
+}
+
+h4 {
+	font-size: 3.0rem;
+}
+
+h5 {
+	font-size: 2.4rem;
+}
+
+h6 {
+	font-size: 1.8rem;
+}
+
+p {
+	margin: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+	.black--type;
+	border-bottom: 1px solid .black--type;
+
+		&:hover { opacity:0.8; }
+
+}
+
+/* hr
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+	margin-top: 3rem;
+	margin-bottom: 3.5rem;
+	border-width: 0;
+	border-top: 1px solid .black--type; 
+}
+
+
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.black--type {
+	color: #191919;
+}
+
+.black--bg {
+	background-color: #181818;
+}
+
+.darkGrey--type {
+	color: #181818;
+}
+
+.darkGrey--bg {
+	background-color: #181818;
+}
+
+.lightGrey--type {
+	color: #f5f5f5;
+}
+
+.lightGrey--bg {
+	background-color: #f5f5f5;
+}
+
+.white--type {
+	color: #ffffff;
+}
+
+.white--bg {
+	background-color: #ffffff;
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Inputs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Select Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Checkbox & Radios
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Groups
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Components
+–––––––––––––––––––––––––––––––––––––––––––––––––– */

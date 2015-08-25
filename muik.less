@@ -6,7 +6,7 @@
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@primaryFont {"open Sans"}
+@primaryFont: 'open Sans';
 
 /* html is set to 62.5% so that all the REM measurements throughout MUIK
 are based on 10px sizing. So basically 1.5rem = 15px Woot! */
@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 1.4;
 	font-weight: 400;
 	font-family: @primaryFont, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	.black--type; 
+	color: @black; 
 }
 
 h1 {
@@ -64,11 +64,10 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a {
-	.black--type;
-	border-bottom: 1px solid .black--type;
+	color: @black;
+	border-bottom: 1px solid @black;
 
 		&:hover { opacity:0.8; }
-
 }
 
 /* hr
@@ -78,44 +77,20 @@ hr {
 	margin-top: 3rem;
 	margin-bottom: 3.5rem;
 	border-width: 0;
-	border-top: 1px solid .black--type; 
+	border-top: 1px solid @black; 
 }
 
 
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.black--type {
-	color: #191919;
-}
+@black: #191919;
 
-.black--bg {
-	background-color: #181818;
-}
+@grey--dark: #181818;
 
-.darkGrey--type {
-	color: #181818;
-}
+@grey--light: #f5f5f5;
 
-.darkGrey--bg {
-	background-color: #181818;
-}
-
-.lightGrey--type {
-	color: #f5f5f5;
-}
-
-.lightGrey--bg {
-	background-color: #f5f5f5;
-}
-
-.white--type {
-	color: #ffffff;
-}
-
-.white--bg {
-	background-color: #ffffff;
-}
+@white: #ffffff;
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

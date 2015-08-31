@@ -6,6 +6,10 @@
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+<<<<<<< HEAD
+=======
+@primaryFont: 'open Sans';
+>>>>>>> 5d4cf616aae94375c8cec8e7fe2364dab5af5d16
 
 /* html is set to 62.5% so that all the REM measurements throughout MUIK
 are based on 10px sizing. So basically 1.5rem = 15px Woot! */
@@ -25,12 +29,20 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: @black; 
 	margin-top: 0;
 	margin-bottom: 2rem;
 	font-weight: 300;
+=======
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.4;
+	font-weight: 400;
+	font-family: @primaryFont, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: @black; 
+>>>>>>> 5d4cf616aae94375c8cec8e7fe2364dab5af5d16
 }
 
 h1 {
@@ -76,12 +88,18 @@ p {
 
 a {
 	color: @black;
+<<<<<<< HEAD
 	text-decoration: underline;
 
 		&:hover { 
 			color: @black;
 			opacity:0.8; }
 
+=======
+	border-bottom: 1px solid @black;
+
+		&:hover { opacity:0.8; }
+>>>>>>> 5d4cf616aae94375c8cec8e7fe2364dab5af5d16
 }
 
 /* hr
@@ -91,13 +109,18 @@ hr {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	border-width: 0;
+<<<<<<< HEAD
 	border-top: 1px solid @greyMedium; 
+=======
+	border-top: 1px solid @black; 
+>>>>>>> 5d4cf616aae94375c8cec8e7fe2364dab5af5d16
 }
 
 
 /* Variables Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+<<<<<<< HEAD
 @black: #181818;
 
 @greyDark: #4c4c4c;
@@ -167,6 +190,15 @@ button, {
 
 	&:hover { color: @black; }
 }
+=======
+@black: #191919;
+
+@grey--dark: #181818;
+
+@grey--light: #f5f5f5;
+
+@white: #ffffff;
+>>>>>>> 5d4cf616aae94375c8cec8e7fe2364dab5af5d16
 
 .button--border { border: .1rem solid @greyMedium; }
 

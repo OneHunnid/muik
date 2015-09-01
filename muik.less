@@ -157,7 +157,8 @@ button, {
 
 	&:hover {
 		color: @white;
-		text-decoration: none; }
+		text-decoration: none;
+		.Opacity }
 
 }
 
@@ -165,7 +166,7 @@ button, {
 	background-color: @greyDark;
 	color: @white;
 
-	&:hover { color: @white;} 
+	&:hover { color: @white; } 
 }
 
 .button--medium {
@@ -215,13 +216,9 @@ select {
 
 	  &:focus {
 	  	outline: 0;
-	  	border: .1rem solid @black;
+	  	border: .1rem solid @black; }
 
-	  }
-
-	  &:disabled {
-	  	.Opacity;
-	  }
+	  &:disabled { .Opacity; }
   }
 
 textarea {

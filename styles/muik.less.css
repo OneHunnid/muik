@@ -1,0 +1,274 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+- Base Styles
+- Typography
+- Links
+- Hr
+- Variable Colors
+- Mixins
+- Buttons
+- Inputs
+- Groups
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* html is set to 62.5% so that all the REM measurements throughout MUIK
+are based on 10px sizing. So basically 1.5rem = 15px Woot! */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Open Sans" "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4c4c4c;
+  -webkit-font-smoothing: antialiased;
+}
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #181818;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+h1 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  letter-spacing: .1rem;
+}
+h2 {
+  font-size: 3.8rem;
+  line-height: 1.25;
+  letter-spacing: .1rem;
+}
+h3 {
+  font-size: 3.4rem;
+  line-height: 1.3;
+  letter-spacing: .1rem;
+}
+h4 {
+  font-size: 3.0rem;
+  line-height: 1.35;
+}
+h5 {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+h6 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #181818;
+  text-decoration: underline;
+}
+a:hover {
+  color: #181818;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+/* hr
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-width: 0;
+  border-top: 1px solid #c4c4c4;
+}
+/* Variables Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Mixins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.Shadow {
+  box-shadow: 0px 1px 2px #bababa;
+}
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button {
+  display: inline-block;
+  background-color: #181818;
+  color: #ffffff;
+  padding: 8px 25px;
+  margin: 5px;
+  text-align: center;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+}
+.button .Box-Sizing a,
+button .Box-Sizing a {
+  border-bottom: none;
+}
+.button:hover,
+button:hover {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.button--dark {
+  background-color: #4c4c4c;
+  color: #ffffff;
+}
+.button--dark:hover {
+  color: #ffffff;
+}
+.button--medium {
+  background-color: #c4c4c4;
+  color: #181818;
+}
+.button--medium:hover {
+  color: #181818;
+}
+.button--light {
+  background-color: #f5f5f5;
+  color: #181818;
+}
+.button--light:hover {
+  color: #181818;
+}
+.button--white {
+  background-color: #ffffff;
+  color: #181818;
+}
+.button--white:hover {
+  color: #181818;
+}
+.button--border {
+  border: 0.1rem solid #c4c4c4;
+}
+.button--borderInverse {
+  border: 0.1rem solid #ffffff;
+}
+.button--rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.button--shadow {
+  box-shadow: 0px 1px 2px #bababa;
+}
+/* Inputs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input,
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #181818;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  margin: 5px;
+  border: 0.1rem solid #c4c4c4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  border: 0.1rem solid #181818;
+}
+input:disabled,
+textarea:disabled,
+select:disabled {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.input--dark {
+  background-color: #4c4c4c;
+  color: #ffffff;
+}
+.input--medium {
+  background-color: #c4c4c4;
+  color: #181818;
+}
+.input--light {
+  background-color: #f5f5f5;
+  color: #181818;
+}
+.input--white {
+  background-color: #ffffff;
+  color: #181818;
+}
+.input--border {
+  border: 0.1rem solid #c4c4c4;
+}
+.input--borderInverse {
+  border: 0.1rem solid #ffffff;
+}
+.input--rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.input--shadow {
+  box-shadow: 0px 1px 2px #bababa;
+}
+/* Groups
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.group {
+  display: inline-block;
+  padding: 2.5rem;
+  margin: .5rem;
+  background-color: #181818;
+  color: #ffffff;
+}
+.group--dark {
+  background-color: #4c4c4c;
+  color: #ffffff;
+}
+.group--medium {
+  background-color: #c4c4c4;
+  color: #ffffff;
+}
+.group--light {
+  background-color: #f5f5f5;
+  color: #181818;
+}
+.group--white {
+  background-color: #ffffff;
+  color: #181818;
+}
+.group--border {
+  border: 0.1rem solid #c4c4c4;
+}
+.group--shadow {
+  box-shadow: 0px 1px 2px #bababa;
+}
